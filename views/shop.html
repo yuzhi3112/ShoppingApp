@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <title>Shopping App</title>
+    <style>
+        /* Global styles */
+        body {
+            background-image: url('https://t4.ftcdn.net/jpg/02/32/16/07/360_F_232160763_FuTBWDd981tvYEJFXpFZtolm8l4ct0Nz.jpg');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            font-family: Arial, sans-serif;
+            color: #333; /* Default text color */
+        }
+        .navbar-custom {
+            background-color: #343a40;
+        }
+        .navbar-custom .navbar-brand,
+        .navbar-custom .nav-link {
+            color: #f8f9fa;
+        }
+        .navbar-custom .nav-link:hover {
+            color: #ffc107;
+        }
+        .card {
+            margin-bottom: 20px;
+            background-color: rgba(255, 255, 255, 0.8);
+            border-radius: 20px; /* Rounded corners for cards */
+            padding: 10px; /* Padding inside cards */
+        }
+        .card-title {
+            font-size: 2rem; /* Larger title size */
+            color: #007bff; /* Blue title color */
+            text-align: center; /* Center-align titles */
+            margin-bottom: 10px; /* Bottom margin for titles */
+        }
+        .card-text {
+            font-size: 1.2rem; /* Larger text size */
+            color: #555; /* Darker text color */
+        }
+        .container {
+            padding: 20px;
+        }
+        .row {
+            margin-top: 20px;
+        }
+        .card-img-top {
+            border-radius: 20px 20px 0 0;
+            object-fit: cover;
+            height: 300px;
+        }
+        .btn-contact {
+            display: block;
+            width: 100%;
+            max-width: 200px; /* Limit button width */
+            margin: 20px auto; /* Center-align and provide space */
+        }
+        /* End of global styles */
+    </style>
+</head>
+<body>
+    <!-- Navbar section -->
+    <nav class="navbar navbar-expand-sm navbar-custom">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="/">Shopping App</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="collapsibleNavbar">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <!-- Link to add a new product -->
+                        <a class="nav-link" href="/addProduct">Add new product</a>
+                    </li>
+                    <li class="nav-item">
+                        <!-- Link to add a new product -->
+                        <a class="nav-link" href="/addCategory">Add new category</a>
+                    </li>
+                    <li class="nav-item">
+                        <!-- Link to the shop page -->
+                        <a class="nav-link" href="shop.html">Shop</a>
+                    </li>
+                    <li class="nav-item">
+                        <!-- Link to the contact page -->
+                        <a class="nav-link" href="contact.html">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-6" id="A">
+                <div class="card">
+                    <img class="card-img-top" src="https://www.shutterstock.com/image-vector/electronics-promotional-shopping-sale-computer-260nw-1190458762.jpg" alt="Electronics">
+                    <div class="card-body">
+                        <h2 class="card-title">Explore Electronics</h2>
+                        <p class="card-text">Discover our wide range of cutting-edge electronic gadgets and devices. From sleek smartphones to powerful laptops and wearable technology, our collection guarantees innovation, quality, and style. Dive into the future of electronics with us today!</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-6" id="B">
+                <div class="card">
+                    <img class="card-img-top" src="https://franchiseindia.s3.ap-south-1.amazonaws.com/uploads/content/fi/art/5feb2c2f49aff.jpeg" alt="Food">
+                    <div class="card-body">
+                        <h2 class="card-title">Indulge in Gourmet Delights</h2>
+                        <p class="card-text">Embark on a culinary journey with our exquisite selection of fresh and flavorful food items. From farm-fresh produce to gourmet delicacies, each product is curated to satisfy your palate. Experience the essence of fine dining and wholesome ingredients with every bite.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Button linking to contact.html -->
+        <a href="contact.html" class="btn btn-primary btn-contact">Contact Us</a>
+    </div>
+</body>
+</html>
