@@ -20,11 +20,11 @@ const connection = mysql.createConnection({
   // host: 'localhost',
   // user: 'root',
   // password: '',
-  // database: 'c237_shoppingapp'
+  // database: 'c237_shopping'
   host : "db4free.net", 
-  user: "yuzhi3112",
+  user: "yuzhi311206",
   password : "Venomspace311206",
-  database : "c237_shoppingapp"
+  database : "c237_shopping"
 
 });
 
